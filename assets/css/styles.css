@@ -494,7 +494,7 @@
 /****************************/
 
 .section-pricing {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 8rem 0;
 }
 
 .pricing-container {
@@ -570,7 +570,7 @@
 /****************************/
 
 .section-contact {
-  padding: 9.6rem 0 8rem 0;
+  padding: 9.6rem 0 7rem 0;
 }
 
 .cta-container {
@@ -664,11 +664,50 @@
 }
 
 /****************************/
+/*          ABOUT        */
+/****************************/
+.section-about {
+  border-top: 1px solid #ddd;
+  padding: 8rem 0 6rem 0;
+  /* margin: 0 18rem; */
+}
+
+.about-description {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.about-icon {
+  width: 1rem;
+  height: 1rem;
+  min-width: 1.2rem;
+  min-height: 1.2rem;
+  background-color: #1864ab;
+  color: #e7f5ff;
+  padding: 1.2rem;
+  border-radius: 50%;
+
+  margin-bottom: 1rem;
+}
+
+.about-sub-heading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #1864ab;
+  letter-spacing: 0.85px;
+  /* text-decoration: underline; */
+}
+
+/****************************/
 /*          FOOTER          */
 /****************************/
 .footer {
-  padding: 9.6rem 0;
-  border-top: 1px solid #ddd;
+  padding: 2rem 0;
+  /* border-top: 1px solid #ddd; */
+  background-color: #1864ab;
 }
 
 .branding-logo {
