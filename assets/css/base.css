@@ -168,6 +168,14 @@ body {
   padding: 1.2rem;
 }
 
+.btn--form-2 {
+  background-color: #796405;
+}
+
+.btn--form-2:hover {
+  background-color: #5d4d05 !important;
+}
+
 .btn--form:hover {
   background-color: #135089;
 }
