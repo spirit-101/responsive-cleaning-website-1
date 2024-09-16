@@ -14,34 +14,34 @@ btnNav.addEventListener("click", function () {
 
 /* Smooth scrolling animation */
 
-const allLinks = document.querySelectorAll("a:link");
+// const allLinks = document.querySelectorAll("a:link");
 
-allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const href = link.getAttribute("href");
-    // Scroll back to top
-    if (href === "#") {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
+// allLinks.forEach(function (link) {
+//   link.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     const href = link.getAttribute("href");
+//     // Scroll back to top
+//     if (href === "#") {
+//       window.scrollTo({
+//         top: 0,
+//         behavior: "smooth",
+//       });
+//     }
 
-    //Scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
-      const sectionElement = document.querySelector(href);
-      sectionElement.scrollIntoView({
-        behavior: "smooth",
-      });
-    }
+//     //Scroll to other links
+//     if (href !== "#" && href.startsWith("#")) {
+//       const sectionElement = document.querySelector(href);
+//       sectionElement.scrollIntoView({
+//         behavior: "smooth",
+//       });
+//     }
 
-    //Close mobile navigation
-    if (link.classList.contains("nav-link")) {
-      header.classList.toggle("nav-open");
-    }
-  });
-});
+//     //Close mobile navigation
+//     if (link.classList.contains("nav-link")) {
+//       header.classList.toggle("nav-open");
+//     }
+//   });
+// });
 
 ///////////////////////////////////////////////////////////
 
@@ -71,3 +71,10 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHero);
 ///////////////////////////////////////////////////////////
+const btnInsta = document.querySelector(".btn--insta");
+console.log(btnInsta);
+
+btnInsta.addEventListener("click", function (e) {
+  // console.log("LINK");
+  // e.preventDefault();
+});
