@@ -157,7 +157,8 @@ body {
 }
 
 .btn--insta {
-  background-color: #ff49ce !important;
+  background-color: #5851DB !important;
+/* background: linear-gradient(135deg, #1B4F8A, #2E86C1) !important; */
   /* border-radius: 12px; */
   margin-left: 10px;
 }
@@ -185,6 +186,12 @@ body {
 
 .btn--form:hover {
   background-color: #135089;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* .btn--secondary:hover,

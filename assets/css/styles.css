@@ -22,6 +22,22 @@
   height: 2.6rem;
 }
 
+
+.btn--insta {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.6rem;
+  white-space: nowrap;
+}
+
+
+
+.insta-icon {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+
 /****************************/
 /*        NAVIGATION        */
 /****************************/
