@@ -1,32 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- META TAG -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- ICONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" href="./assets/images/logos/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      href="./assets/images/logos/apple-touch-icon.png"
-    />
+    <link rel="apple-touch-icon" href="./assets/images/logos/apple-touch-icon.png" />
     <link rel="manifest" href="./manifest.webmanifest" />
-    <!-- STYLES -->
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/layout.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -34,33 +21,45 @@
     <title>Clearview Window Washing</title>
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="header">
-      <div class="header-container">
-        <a href="#">
-          <img
-            src="./assets/images/logos/logo-2.png"
-            alt="iClean logo"
-            class="logo"
-          />
-        </a>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a class="nav-link" href="#how-works">How it works</a></li>
-            <li><a class="nav-link" href="#services">Services</a></li>
-            <!-- <li><a class="nav-link" href="#testimonials">Testimonials</a></li> -->
-            <li><a class="nav-link nav-btn" href="#contact">Contact us</a></li>
-          </ul>
-        </nav>
-        <button class="btn-mobile-nav">
-          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+
+    <div class="sticky-top">
+      <!-- ANNOUNCEMENT BANNER -->
+      <div class="announcement-bar" id="announcement-bar">
+        <div class="announcement-inner">
+          <p class="announcement-text">
+            🪟 <strong>Book now and get a free quote!</strong> — Serving Vernon all summer
+          </p>
+          <a href="#contact" class="announcement-btn">Get a Quote &rarr;</a>
+        </div>
+        <button class="announcement-close" id="announcement-close" aria-label="Close banner">
+          <ion-icon name="close-outline"></ion-icon>
         </button>
       </div>
-    </header>
+
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header-container">
+          <a href="#">
+            <img src="./assets/images/logos/logo-2.png" alt="iClean logo" class="logo" />
+          </a>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a class="nav-link" href="#how-works">How it works</a></li>
+              <li><a class="nav-link" href="#services">Services</a></li>
+              <li><a class="nav-link nav-btn" href="#contact">Contact us</a></li>
+            </ul>
+          </nav>
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+        </div>
+      </header>
+    </div>
 
     <!-- MAIN CONTENT -->
     <main>
+
       <!-- HERO SECTION -->
       <section class="section-hero">
         <div class="hero">
@@ -72,32 +71,16 @@
               Elevate your view with Vernon's best window cleaners. Affordable
               rates, exceptional service, and crystal-clear results guaranteed!
             </p>
-
-
             <div class="hero-buttons">
-  <a href="#contact" class="btn btn--primary">Get Started &rarr;</a>
-  <div class="insta-btn-group">
-    
-
-<a       href="https://www.instagram.com/vernonclearview/"
-      class="btn btn--primary btn--insta"
-      target="_blank">    
-      <img
-        src="./assets/images/gallery/instagram.png"
-        alt="Instagram logo"
-        class="insta-icon"
-      />
-      <span>See Our Work</span>
-    </a>
-  </div>
-</div>
+              <a href="#contact" class="btn btn--primary">Get Started &rarr;</a>
+              <a href="https://www.instagram.com/vernonclearview/" class="btn btn--primary btn--insta" target="_blank">
+                <img src="./assets/images/gallery/instagram.png" alt="Instagram logo" class="insta-icon" />
+                <span>See Our Work</span>
+              </a>
+            </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="./assets/images/gallery/hero-img1.jpeg"
-              alt="Woman wiping the table"
-              class="hero-img"
-            />
+            <img src="./assets/images/gallery/hero-img1.jpeg" alt="Woman wiping the table" class="hero-img" />
           </div>
         </div>
       </section>
@@ -152,6 +135,7 @@
           </div>
         </div>
       </section>
+
       <!-- SERVICES SECTION -->
       <section class="section-services" id="services">
         <div class="container t-center">
@@ -163,41 +147,14 @@
         <div class="container d-grid grid-col--2">
           <div class="gallery">
             <figure class="gallery-item">
-              <img
-                src="./assets/images/gallery/gallery-img1.jpeg"
-                alt="Photo of woman cleaning"
-              />
+              <img src="./assets/images/gallery/gallery-img1.jpeg" alt="Photo of window cleaning" />
             </figure>
             <figure class="gallery-item">
-              <img
-                src="./assets/images/gallery/collage-2.webp"
-                alt="Photo of woman cleaning"
-              />
+              <img src="./assets/images/gallery/collage-2.webp" alt="Photo of window cleaning" />
             </figure>
             <figure class="gallery-item">
-              <img
-                src="./assets/images/gallery/gallery-img-2.jpeg"
-                alt="Photo of woman cleaning"
-              />
+              <img src="./assets/images/gallery/gallery-img-2.jpeg" alt="Photo of window cleaning" />
             </figure>
-            <!-- <figure class="gallery-item">
-              <img
-                src="./assets/images/gallery/collage-4.jpg"
-                alt="Photo of woman cleaning"
-              />
-            </figure>
-            <figure class="gallery-item">
-              <img
-                src="./assets/images/gallery/gallery-5.jpg"
-                alt="Photo of woman cleaning"
-              />
-            </figure>
-            <figure class="gallery-item">
-              <img
-                src="./assets/images/gallery/gallery-6.jpg"
-                alt="Photo of woman cleaning"
-              />
-            </figure> -->
           </div>
           <div class="services-list">
             <div class="services-box">
@@ -205,21 +162,16 @@
               <div class="service-details">
                 <h3 class="service-title">Flexible Scheduling</h3>
                 <p class="service-description">
-                  Choose a time that works best for you with our flexible
-                  scheduling options.
+                  Choose a time that works best for you with our flexible scheduling options.
                 </p>
               </div>
             </div>
             <div class="services-box">
-              <ion-icon
-                name="briefcase-outline"
-                class="service-icon"
-              ></ion-icon>
+              <ion-icon name="briefcase-outline" class="service-icon"></ion-icon>
               <div class="service-details">
                 <h3 class="service-title">Satisfaction Guarantee</h3>
                 <p class="service-description">
-                  We stand by our work with a satisfaction guarantee for every
-                  job.
+                  We stand by our work with a satisfaction guarantee for every job.
                 </p>
               </div>
             </div>
@@ -228,108 +180,13 @@
               <div class="service-details">
                 <h3 class="service-title">Trained Professionals</h3>
                 <p class="service-description">
-                  Our team is skilled and experienced, ensuring high-quality
-                  service every time.
+                  Our team is skilled and experienced, ensuring high-quality service every time.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- TESTIMONIALS SECTION -->
-      <!--     <section class="section-testimonials" id="testimonials">
-        <div class="container-small t-center">
-          <span class="sub-heading">Testimonials</span>
-          <h2 class="heading-secondary">
-            Take a look at our past customers success stories
-          </h2>
-        </div>
-        <div class="container">
-          <div class="testimonials-container">
-
-            <div class="testimonial-left-col">
-              <figure class="testimonial">
-                <div class="testimonial-rating-box">
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                </div>
-                <blockquote class="testimonial-text">
-                  I was skeptical at first, but Clearview Windows won me over
-                  with their spotless cleaning job. Now I can't stop admiring
-                  the view from my home in Vernon!
-                </blockquote>
-                <div class="testimonial-author-box">
-                  <div class="testimonial-author">
-                    <p class="testimonial-name">Jonathan</p>
-                  </div>
-                </div>
-              </figure>
-              <figure class="testimonial">
-                <div class="testimonial-rating-box">
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                </div>
-                <blockquote class="testimonial-text">
-                  Clearview Windows is the real deal! Friendly, efficient, and
-                  they left my windows gleaming. Can't ask for more in Vernon!
-                </blockquote>
-                <div class="testimonial-author-box">
-                  <div class="testimonial-author">
-                    <p class="testimonial-name">Rafael</p>
-                  </div>
-                </div>
-              </figure>
-            </div>
-
-            <div class="testimonial-right-col">
-              <figure class="testimonial">
-                <div class="testimonial-rating-box">
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                </div>
-                <blockquote class="testimonial-text">
-                  I never realized how much a professional window cleaning could
-                  brighten up my day until I hired Clearview Windows. They're my
-                  go-to in Vernon!
-                </blockquote>
-                <div class="testimonial-author-box">
-                  <div class="testimonial-author">
-                    <p class="testimonial-name">Jennifer</p>
-                  </div>
-                </div>
-              </figure>
-              <figure class="testimonial">
-                <div class="testimonial-rating-box">
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                  <ion-icon name="star" class="star-icon"></ion-icon>
-                </div>
-                <blockquote class="testimonial-text">
-                  Clearview Windows in Vernon is a game-changer! They made my
-                  windows so clean, it feels like I'm living in a postcard.
-                </blockquote>
-                <div class="testimonial-author-box">
-                  <div class="testimonial-author">
-                    <p class="testimonial-name">Anita</p>
-                  </div>
-                </div>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-    -->
 
       <!-- CONTACT SECTION -->
       <section class="section-contact" id="contact">
@@ -339,43 +196,23 @@
             <form class="contact-form" name="Quote Requests" netlify>
               <div class="input-grp">
                 <label for="first_name">First Name</label>
-                <input
-                  type="text"
-                  name="first_name"
-                  id="first_name"
-                  placeholder="Your first name"
-                />
+                <input type="text" name="first_name" id="first_name" placeholder="Your first name" />
               </div>
               <div class="input-grp">
                 <label for="last_name">Last Name</label>
-                <input
-                  type="text"
-                  name="last_name"
-                  id="last_name"
-                  placeholder="Your last name"
-                />
+                <input type="text" name="last_name" id="last_name" placeholder="Your last name" />
               </div>
               <div class="input-grp">
                 <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your email address"
-                />
+                <input type="email" name="email" id="email" placeholder="Your email address" />
               </div>
               <div class="input-grp">
                 <label for="phone">Phone</label>
-                <input
-                  type="text"
-                  name="phone"
-                  id="phone"
-                  placeholder="Your phone number"
-                />
+                <input type="text" name="phone" id="phone" placeholder="Your phone number" />
               </div>
               <div class="input-grp">
-                <label for="hear">How can we help you?</label>
-                <input type="text" name="message" placeholder="Your inquiry" />
+                <label for="message">How can we help you?</label>
+                <input type="text" name="message" id="message" placeholder="Your inquiry" />
               </div>
               <button type="submit" class="btn btn--form">Submit</button>
             </form>
@@ -407,100 +244,33 @@
           </div>
         </div>
       </section>
+
     </main>
 
-    <div class="container-small margin-bottom-md">
-      <div class="container t-center">
-        <!-- <ion-icon name="help-outline" class="about-icon"></ion-icon> -->
-        <span class="about-sub-heading review-sub"
-          >Had your windows washed?</span
-        >
-      </div>
-      <div class="cta-container cta-container-2">
-        <h2 class="contact-heading contact-heading-2">Leave a review!</h2>
-        <form class="contact-form" name="Reviews" netlify>
-          <div class="input-grp">
-            <label for="first_name">First Name</label>
-            <input
-              type="text"
-              name="first_name"
-              id="first_name"
-              placeholder="Your first name"
-            />
-          </div>
-          <div class="input-grp">
-            <label for="last_name">Last Name</label>
-            <input
-              type="text"
-              name="last_name"
-              id="last_name"
-              placeholder="Your last name"
-            />
-          </div>
-          <div class="input-grp">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Your email address"
-            />
-          </div>
-
-          <div class="input-grp">
-            <label for="hear">Rating</label>
-            <select name="rating" id="hear">
-              <option value="">Select one</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
-
-          <div class="input-grp">
-            <label for="message">Review</label>
-            <input
-              type="text"
-              name="message"
-              id="message"
-              placeholder="Write your review..."
-            />
-          </div>
-          <button type="submit" class="btn btn--form btn--form-2">
-            Submit
-          </button>
-        </form>
-      </div>
-    </div>
-
+    <!-- ABOUT SECTION -->
     <section class="section-about" id="about">
       <div class="container t-center">
         <ion-icon name="help-outline" class="about-icon"></ion-icon>
         <span class="about-sub-heading">About us</span>
         <p class="service-description">
-Vernon Clearview is a student-run window cleaning service, providing clients with perfect windows, ensuring customer satisfaction is guaranteed. Operating for 4 years in the greater Vernon area, we take pride in our work, leaving every customer with a smile.
+          Vernon Clearview is a student-run window cleaning service, providing clients with perfect windows, ensuring customer satisfaction is guaranteed. Operating for 4 years in the greater Vernon area, we take pride in our work, leaving every customer with a smile.
         </p>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-  <div class="footer-inner container">
-    <p class="footer-copy">&copy; 2025 Clearview Window Washing. All rights reserved.</p>
-    <a href="./private-policy.html" class="footer-policy-link">Privacy Policy</a>
-  </div>
-</footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
+      <div class="footer-inner container">
+        <p class="footer-copy">&copy; 2025 Clearview Window Washing. All rights reserved.</p>
+        <a href="./private-policy.html" class="footer-policy-link">Privacy Policy</a>
+      </div>
+    </footer>
+
+    <!-- FLOATING BUTTON -->
     <a href="#contact" class="btn-float">Request a Quote &rarr;</a>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>

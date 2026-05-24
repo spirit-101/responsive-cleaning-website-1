@@ -78,3 +78,19 @@ btnInsta.addEventListener("click", function (e) {
   // console.log("LINK");
   // e.preventDefault();
 });
+
+// Announcement banner dismiss
+const bar = document.getElementById('announcement-bar');
+const closeBtn = document.getElementById('announcement-close');
+
+if (closeBtn && bar) {
+  closeBtn.addEventListener('click', function () {
+    bar.classList.add('hidden');
+    sessionStorage.setItem('bannerClosed', 'true');
+  });
+
+  // Keep it closed if they already dismissed it this session
+  if (sessionStorage.getItem('bannerClosed') === 'true') {
+    bar.classList.add('hidden');
+  }
+}

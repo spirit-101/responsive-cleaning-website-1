@@ -94,7 +94,7 @@
 }
 
 /* STICKY NAVIGATION */
-.sticky .header {
+/* .sticky .header {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -105,11 +105,14 @@
   background-color: rgba(255, 255, 255, 0.97);
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
   z-index: 999;
+} */
+
+.sticky .header {
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
-.sticky .section-hero {
-  margin-top: 9.6rem;
-}
+
 
 /****************************/
 /*      HERO SECTION        */
@@ -895,3 +898,85 @@
 .footer-inner {
   padding-bottom: 7rem;
 }
+
+/****************************/
+/*    ANNOUNCEMENT BANNER   */
+/****************************/
+.announcement-bar {
+  position: relative;
+  background: linear-gradient(135deg, #1864ab, #2e86c1);
+  color: #fff;
+  padding: 1.2rem 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement-inner {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.announcement-text {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.announcement-btn {
+  background-color: #fff;
+  color: #1864ab;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  border-radius: 100px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.announcement-btn:hover {
+  background-color: #e8f0f7;
+  transform: translateY(-1px);
+}
+
+.announcement-close {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem;
+  transition: color 0.3s;
+}
+
+.announcement-close:hover {
+  color: #fff;
+}
+
+.announcement-close ion-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.announcement-bar.hidden {
+  display: none;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+
+
