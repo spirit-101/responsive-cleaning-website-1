@@ -88,6 +88,14 @@
     height: 2.4rem;
   }
 
+.hero-buttons {
+  justify-content: center;
+}
+
+.hero-text-box {
+  text-align: center;
+}
+
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -137,7 +137,6 @@ body {
   font-weight: 600;
   border-radius: px;
 
-  /*For butons*/
   cursor: pointer;
   border: none;
 
@@ -151,6 +150,10 @@ body {
   color: #fff;
 }
 
+.btn--primary {
+  white-space: nowrap;
+}
+
 .btn--primary:hover,
 .btn--primary:active {
   background-color: #135089;
@@ -161,6 +164,10 @@ body {
 /* background: linear-gradient(135deg, #1B4F8A, #2E86C1) !important; */
   /* border-radius: 12px; */
   margin-left: 10px;
+}
+
+.btn--insta:hover {
+  background-color: #6b64e7 !important;
 }
 
 .btn--secondary:link,
