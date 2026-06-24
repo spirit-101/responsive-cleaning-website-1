@@ -168,13 +168,13 @@
 
 .hero-img-box::before {
   background-color: #1864ab;
-  top: 5%;
+  top: 3%;
   right: 20%;
 }
 
 .hero-img-box::after {
   background-color: #bad1e6;
-  top: 8%;
+  top: 5%;
   left: 20%;
 }
 
